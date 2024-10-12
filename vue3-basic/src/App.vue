@@ -2,7 +2,7 @@
  * @Author: ctynt
  * @Date: 2024-09-10 08:28:54
  * @LastEditors: ctynt
- * @LastEditTime: 2024-09-25 17:04:40
+ * @LastEditTime: 2024-09-25 21:14:55
 -->
 <template>
   <div>
@@ -26,7 +26,7 @@
     <!-- <CardParent /> -->
     <!-- <LoginForm /> -->
     <!-- <ProductForm /> -->
-    <!-- <WeiBoIndex /> -->
+    <WeiBoIndex />
     <!-- <BiliBiliIndex /> -->
 
   </div>
@@ -53,6 +53,6 @@
 // import CardParent from './components/CardParent.vue';
 // import LoginForm from './components/LoginForm.vue';
 // // import ProductForm from './components/ProductForm.vue';
-// import WeiBoIndex from './components/WeiBoIndex.vue';
-// import BiliBiliIndex from './components/BiliBiliIndex.vue';
+import WeiBoIndex from './components/WeiBoIndex.vue';
+import BiliBiliIndex from './components/BiliBiliIndex.vue';
 </script>
