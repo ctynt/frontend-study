@@ -6,13 +6,14 @@
 -->
 
 <template>
-  <div>知乎热榜</div>
-  <ZhihuHot />
+  <!-- <div>知乎热榜</div>
+  <ZhihuHot /> -->
+  <Specials />
 </template>
 
 <script setup lang="ts">
-import ZhihuHot from './components/ZhihuHot.vue'; 
-
+// import ZhihuHot from './components/ZhihuHot.vue'; 
+import Specials from './components/Specials.vue';
 </script>
 
 <style scoped></style>
