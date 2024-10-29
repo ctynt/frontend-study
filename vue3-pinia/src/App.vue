@@ -3,6 +3,7 @@
         <router-link to="/counter">计数器</router-link>
         <router-link to="/todo">待办清单</router-link>
         <router-link to="/finance">记账应用</router-link>
+        <router-link to="/profile">个人中心</router-link>
     </nav>
 
     <router-view></router-view>

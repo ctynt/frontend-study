@@ -1,0 +1,6 @@
+<template>
+  <ProductManagement />
+</template>
+<script setup lang="ts">
+import ProductManagement from "./components/ProductManagement.vue";
+</script>
