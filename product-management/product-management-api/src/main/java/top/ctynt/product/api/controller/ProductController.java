@@ -4,8 +4,10 @@ import jakarta.annotation.Resource;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import top.ctynt.product.api.entity.Product;
 import top.ctynt.product.api.service.ProductService;
+import top.ctynt.product.api.util.OssUtil;
 
 import java.util.List;
 
@@ -21,6 +23,10 @@ public class ProductController {
 
     @Resource
     private ProductService productService;
+
+    @Resource
+    private OssUtil ossUtil;
+    
     //查询所有商品
     @GetMapping
     public List<Product> getProducts() {
@@ -47,5 +53,11 @@ public class ProductController {
     @DeleteMapping("/{id}")
     public Boolean deleteProduct(@PathVariable Long id) {
         return productService.removeById(id);
+    }
+
+    //上传文件
+    @PostMapping("/upload")
+    public String uploadFile(@RequestParam("file") MultipartFile file) {
+        return ossUtil.uploadFile(file);
     }
 }

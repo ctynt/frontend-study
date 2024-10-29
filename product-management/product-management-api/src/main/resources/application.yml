@@ -4,6 +4,11 @@ spring:
     username: root
     password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+      enabled: true
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
@@ -12,3 +17,14 @@ mybatis-plus:
 
 server:
   port: 8080
+
+aliyun:
+  oss:
+    # oss 对外服务的访问域名
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    # 访问身份验证中用到用户标识
+    accessKeyId: LTAI5tF9VgDkGom4hbGCWehh
+    # 用户用于加密签名字符串和 oss 用来验证签名字符串的密钥
+    accessKeySecret: C1NO0FfWY79tesbZYkRr4F20xz95Ld
+    # oss的存储空间名
+    bucketName: ctynt-oss
